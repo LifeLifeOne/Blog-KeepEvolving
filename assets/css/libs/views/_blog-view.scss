@@ -1,0 +1,89 @@
+/*  ===============
+    PAGE BLOG
+    ===============  */
+
+section.publish-article {
+    display: none;
+}
+
+.articles {
+    
+    text-align: left;
+    margin-bottom: 3rem;
+    // background-color: #f1f1f1;
+    border-radius: 0.8rem;
+
+    // Image de l'article 
+    .img-size {
+        display: block;
+        margin: auto;
+        margin-bottom: 3rem;
+        box-shadow: $box-shadow;
+    }
+
+    // Titre de l'article 
+    .article-title {
+        background-color: $beige-color;
+        font-size: 1.8rem;
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+    // Categorie de l'article 
+    .article-category {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+
+        .color-category {
+            color: $blue-color;
+        }
+    }
+
+    // Contenu de l'article 
+    .article-content {
+        margin-top: 4rem;
+        text-align: center;
+        line-height: 1.6;
+    
+        // Passage à la ligne de la balise <pre>
+        word-wrap: break-word;     
+        white-space: pre-wrap;      
+    }
+
+    // article-date
+    .article-date {
+        text-align: right;
+        color: #363636;
+        opacity: 1;
+
+        b {
+            color:#111;
+        }
+    }
+
+}   
+
+// Bouton Admin pour afficher le formulaire d'ajout d'article
+#btn-admin {
+    
+    border: none;
+    cursor: pointer;
+    background-color: $red-color;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    margin-top: 3rem;
+    border-radius: 0.5em;
+    transition: 0.1s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.8;
+    }
+}
+
+// Classe qui cache ou affiche avec le toggle en javascript
+main .show {
+    display: block;
+}

@@ -1,0 +1,43 @@
+/*  ===============
+    FOOTER 
+    ===============  */
+
+footer {
+
+    margin-top: 8rem;
+    
+    .container {
+        margin-bottom: 0;
+    }
+
+    div {
+        flex-direction: column;
+    }
+
+    background-color: $background-dark;
+    line-height: 5rem;
+
+    span {
+        color: $white-color;
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+
+    .wrap-creator a {
+        text-decoration: underline;
+
+        &:hover {
+            color: #fff;
+        }
+        &:active {
+            color: #fff;
+        }
+
+    }
+
+    .w3c {
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+}

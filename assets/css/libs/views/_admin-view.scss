@@ -1,0 +1,56 @@
+/*  ===============
+    PAGE ADMIN
+    ===============  */
+
+
+table {
+    width: 100%;
+    margin-top: 7rem;
+    text-align: right;  
+    
+    td {
+        border-top: 1px solid #ccc;
+        padding: 1rem 0;
+    }
+}
+
+// Update Button 
+a.btn-upd {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background-color: $background-dark;
+    color: $white-color;
+
+    &:hover {
+        background-color: $background-dark;
+        opacity: 0.85;
+    }
+    &:active {
+        background-color: $background-dark;
+        opacity: 0.85;
+    }
+}
+
+// Delete Button
+a.btn-del {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin: 0.5rem 0;
+    background-color: $red-color;
+    color: $white-color;
+
+    &:hover {
+        background-color: $red-color;
+        opacity: 0.85;
+    }
+    &:active {
+        background-color: $red-color;
+        opacity: 0.85;
+    }
+}
+
+main.show {
+    display: block;
+}

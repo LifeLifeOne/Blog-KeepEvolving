@@ -1,0 +1,69 @@
+/*  ===============
+    PAGE SALON / CHAT
+    ===============  */
+
+.chat-box {
+    
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    height: 30rem;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid rgb(236, 236, 236);
+
+    li {
+        list-style: none;
+        line-height: 2;
+    }
+}
+
+.mini-chat div:nth-child(3) {
+    flex-direction: column;
+}
+
+.mini-chat {
+
+    label {
+        color: $blue-color;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 8rem;
+        margin: 3rem 0;
+        padding: 2rem;
+        font-size: 1.9rem;
+        border: none;
+        outline: none;
+        background-color: rgb(241, 241, 241);
+
+        &:focus {
+            outline: 0.1rem solid $blue-color;
+        }
+    }
+
+
+}
+
+.login-color {
+    color: #227093;
+}
+
+#scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#scroll::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #ccc;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+    background-color:$dark-color;
+}

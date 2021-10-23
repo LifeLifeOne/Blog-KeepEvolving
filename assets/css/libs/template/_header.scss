@@ -1,0 +1,121 @@
+/*  ===============
+    HEADER 
+    ===============  */
+
+header {
+
+    background-color: #fff;
+    padding: 6rem 0 3rem;
+
+    // LOGO KEEP EVOLVING
+    .logo {
+
+        text-align: center;
+        margin-top: 1rem;
+
+        .logo-KeepEvolving {
+            color: #111;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.2rem;
+        }
+
+        .logo-color {
+            color: $blue-color;
+        }
+    }
+
+    // Vignette Nom de l'utilisateur
+    .hello-username {
+        z-index: 10;
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        background: $background-extra-light;
+        border-radius: 0.7rem;
+        padding: 0.8rem 2rem;
+        pointer-events: none;
+    }
+
+    // Vignette Accès Administrateur
+    .administrator {
+        z-index: 10;
+        position: absolute;
+        top: 2.2rem;
+        left: 15rem;
+        
+        a {
+            background: $red-color;
+            border-radius: 0.7rem;
+            padding: 0.75rem 2rem;
+        }
+
+    }
+
+    .administrator a:hover,
+    .administrator a:active 
+    {
+        opacity: 0.85;
+        color: #fff;
+    }
+    
+    nav {
+        
+        display: none;
+
+        background-color: $background-transparent;
+        line-height: 4;
+        
+        // Animation pour le menu burger
+        opacity: 0;
+        transition: opacity 0.28s ease;
+
+        .logo {
+            color: $white-color;
+        }
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav ul li {
+        opacity: 0;
+        width: 100%;
+
+        &:hover {
+            background-color: rgba(10, 61, 98, 0.25);
+        }
+        &:active {
+            background-color: rgba(10, 61, 98, 0.25);
+        }
+    }
+
+    nav ul li a {
+        padding: 0 3rem;
+    }
+    
+}
+
+#positive-api {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5rem;
+
+    .quote-style {
+        color: #3e5523;
+        font-size: 1.3rem;
+    }
+}
+
+// Lien page active PHP pour la navigation
+.active-link { 
+    background-color: rgba(10, 61, 98, 0.3);
+    text-shadow: 0 0 8px #FFF, 
+                 0 0 13px #FFF, 
+                 0 0 18px #FFF, 
+                 2px 2px 2px rgba(255,255,255,0);
+}

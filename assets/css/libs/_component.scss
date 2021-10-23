@@ -1,0 +1,34 @@
+/*  ===============
+    COMPONENTS 
+    ===============  */
+
+// Button Class
+.btn {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    background-color: $blue-color;
+    padding: 1em 2.5em;
+    margin-top: 2rem;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $dark-color;
+        color: $white-color;
+    }
+}
+
+.btn-small {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    background-color: $dark-color;
+    padding: 0.5em 1.1em;
+    margin-top: 2rem;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $dark-color;
+        color: $white-color;
+    }
+}

@@ -1,0 +1,30 @@
+/*  ===============
+    PAGE 404
+    ===============  */
+
+
+.container-404 {
+
+    width: max-content;
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.error-404 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    .btn-small {
+        text-align: center;
+    }
+}

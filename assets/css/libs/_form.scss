@@ -1,0 +1,105 @@
+/*  ===============
+    FORMS 
+    ===============  */
+
+// Form Login & Register
+form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  // Input design
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    outline: none;
+    width: 100%;
+    padding: 1.2rem;
+    margin: 0.8rem 0 2rem 0;
+    border: 0.1rem solid $blue-color;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+
+    &:focus {
+      border: 0.1rem solid $beige-color;
+    }
+  }
+
+  // Button design
+  button[type="submit"] {
+    display: block;
+    margin: 2rem auto;
+
+    background-color: $red-color;
+    color: $white-color;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+      background-color: $blue-color-dark;
+    }
+    &:active {
+      background-color: $blue-color-dark;
+    }
+  }
+
+  a {
+    color: $blue-color-dark;
+    text-decoration: underline;
+
+    &:hover {
+      color: initial;
+      opacity: 0.6;
+    }
+  }
+}
+
+// Form Article
+form {
+  // Selection catégories
+  select {
+    font-size: 1.9rem;
+    padding: 0.4em 0.9em;
+    margin: 0.8em 0;
+    width: 100%;
+    opacity: 0.4;
+    outline: none;
+  }
+
+  .textarea-article {
+    outline: none;
+    resize: none;
+    height: 20rem;
+    width: 100%;
+    padding: 1.2rem;
+    margin: 0.8rem 0 2rem 0;
+    border: 0.1rem solid $blue-color;
+    border-radius: 0.5rem;
+    transition: 0.2s ease;
+
+    &:focus {
+      border: 0.1rem solid $beige-color;
+    }
+  }
+
+  .form-control-file {
+    margin: 2rem;
+  }
+}
+
+// Stylisation des erreurs de saisie formulaire PHP
+.error-box {
+  color: rgba(214, 48, 49);
+  margin-bottom: 2rem;
+
+  li {
+    padding: 0.7rem 0;
+  }
+}
+
+.news-letter form:last-child {
+  text-align: left;
+}

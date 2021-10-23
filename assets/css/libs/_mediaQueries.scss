@@ -1,0 +1,206 @@
+/*  ===============
+    MEDIA QUERIES 
+    ===============  */
+
+// SMARTPHONE SCREEN MIN 600px
+@media screen and (min-width: 600px) {
+
+    /* ======= HEADER ======= */
+    header {
+        padding: 2rem 0 2rem;
+    }
+
+    // LOGO KEEP EVOLVING
+    header .logo {
+        text-align: left;
+        margin-left: 2.5rem;
+    }
+
+    // Vignette Nom de l'utilisateur
+    header .hello-username {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        left: initial;
+    }
+
+    // Vignette Accès Administrateur
+    header .administrator {
+        position: absolute;
+        top: 1.8rem;
+        right: 15rem;
+        left: initial;
+    }
+
+    // Bouton navigation burger 
+    header .burger {
+        display: none;
+    }
+
+    header nav {
+        display: block; // Note: à verifier avec !important
+        opacity: 1;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    header nav ul li {
+        opacity: 1;
+    }
+
+    header nav ul li a{
+        padding: 0;
+    }
+
+    // Classe active pour l'affiche du menu
+    .nav-active {
+        display: block;
+    }
+
+
+
+    
+    /* ======= MAIN ======= */
+
+    main {
+        padding: 0 2.5rem;
+
+    }
+
+    section {
+        padding: 2rem 2.5rem;
+    }
+
+    section .btn {
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    article {
+
+        padding: 3rem;
+
+        .img-size {
+            max-width: 80%;
+            border-radius: 0.8rem;
+        } 
+
+    }
+
+    .articles .article-title {
+        font-size: 2.5rem;
+    } 
+
+    // Home Page
+    .who { // Avatar de profil qui mène au Linkedin
+
+        p {
+            margin: 0 4.5rem;
+        }
+
+        .profil-pic {
+            width: 7.5rem;
+            position: absolute;
+            bottom: -7rem;
+            right: -3.5rem;
+            box-shadow: $box-shadow;
+        }
+
+    }
+
+    // Login success Page
+    .access-connect {
+        flex-direction: row;
+        align-items: baseline;
+
+        div {
+            margin: 0 1.5rem;
+        }
+    }
+
+    // Blog Page
+    .articles .article-content {
+        text-align: left;
+    }
+
+    // Salon (chat) Page
+    .mini-chat textarea {
+        width: 70%;
+    }
+
+    // Contact Page
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .colored-bg {
+        padding: 1.5rem;
+    }
+
+
+    /* ======= FOOTER ======= */
+    footer div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .fa-github, 
+    footer .fa-twitter, 
+    footer .fa-linkedin 
+    {
+        font-size: 3.2rem;
+    }
+
+}
+
+// SCREEN MIN 820px
+@media screen and (min-width: 820px) {
+
+    .who {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .computer-img {
+            width: 30%;
+            min-width: 10rem;
+            margin-left: 3rem;
+        }
+
+        div {
+            padding-left: 5rem;
+            text-align: left;
+        }
+    }
+
+
+}
+
+// SCREEN MIN 970px
+@media screen and (min-width: 970px) {
+
+    // MAIN
+
+    // Home Page 
+    .who .computer-img {
+        width: 50%;
+    }
+
+    // Wrapper formulaire d'enregistrement
+    section .wrapper-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // Wrapper formulaire de connexion
+    section .wrapper-right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

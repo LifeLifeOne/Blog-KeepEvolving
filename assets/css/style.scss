@@ -1,0 +1,18 @@
+// Importation de toutes les feuilles de style scss
+
+@import "./libs/variables";
+@import "./libs/global";
+@import "./libs/fontAwesome";
+@import "./libs/tools";
+@import "./libs/template/header";
+@import "./libs/template/navBurger";
+@import "./libs/form";
+@import "./libs/views/home-view";
+@import "./libs/views/blog-view";
+@import "./libs/views/chat-view";
+@import "./libs/views/contact-view";
+@import "./libs/views/admin-view";
+@import "./libs/template/footer";
+@import "./libs/keyFrames";
+@import "./libs/mediaQueries";
+@import "./libs/views/404";

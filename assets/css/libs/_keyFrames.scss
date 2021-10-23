@@ -1,0 +1,89 @@
+/*  ===============
+    KEYFRAMES
+    ===============  */
+
+// Animation shaking icons
+@keyframes Shaky {
+    
+    0% {
+        transform: rotate(6deg);
+    }
+
+    10% {
+        transform: rotate(-6deg);
+    }
+
+    30% {
+        transform: rotate(6deg);
+    }
+
+    50% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+// Animation little shaky 
+@keyframes infiniteShaky {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+// Animation Links nav burger
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(15rem);
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+// Animation Links nav burger
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-150%);
+    } 
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+// Animation Citations
+@keyframes opacityFade {
+    0% {
+        opacity: 0;
+    } 
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+
+}

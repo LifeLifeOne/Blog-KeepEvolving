@@ -1,0 +1,25 @@
+/*  ===============
+    FONT AWESOME 
+    ===============  */
+
+// Font Awesome FOOTER
+footer .fa-github, 
+footer .fa-twitter, 
+footer .fa-linkedin 
+{
+
+    color: $white-color;
+    font-size: 2.5rem;
+    padding: 2rem;
+
+    &:hover {
+        color: $beige-color;
+        animation: Shaky 0.8s;
+    }
+    &:active {
+        color: $beige-color;
+        animation: Shaky 0.8s;
+    }
+}
+
+

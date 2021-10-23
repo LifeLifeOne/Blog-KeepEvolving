@@ -1,0 +1,1 @@
+ErrorDocument 404 /localhost/www/PF/views/404/notFound.php

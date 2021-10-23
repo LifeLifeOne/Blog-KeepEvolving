@@ -1,0 +1,150 @@
+/*  ===============
+    GLOBAL SETTINGS
+    ===============  */
+
+    
+// Importation de la Google Font "Roboto"
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*, 
+::before, 
+::after 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x:hidden
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $dark-color;
+    letter-spacing: 0.3rem;
+    background-color: $background-light;
+}
+
+main {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+section {
+    background-color: $white-color;
+    margin: 4rem auto;
+    padding: 1.5rem 1.5rem;
+    box-shadow: $box-shadow;
+
+}
+
+article {
+
+    background-color: #f7f7f7;
+    padding: 1.8rem;
+    margin: 2rem 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    
+    .article-info {
+        text-align: right;
+        font-size: 1.3rem;
+        opacity: 0.7;
+
+        .date {
+            color: $red-color;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+// Permet l'invisibilité des articles si sont IntersectionRatio est visible à + de 50%
+.hiddenObs {
+    opacity: 0;
+}
+
+aside {
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); 
+    
+    color: #fff;
+    padding: 1.5rem 1.5rem;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+h1, 
+h2, 
+h3, 
+h4 
+{
+    margin-bottom: 4rem;
+}
+
+// Ajout du chevron "style ouverture de balise"
+h1::before, 
+h2::before, 
+h3::before, 
+h4::before 
+{
+    font-family: "Font Awesome 5 Free";
+    content: '\f104';
+    color: $red-color;
+    margin-right: 1rem;
+}
+
+// Ajout du chevron "style fermeture de balise"
+h1::after, 
+h2::after, 
+h3::after, 
+h4::after 
+{
+    font-family: "Font Awesome 5 Free";
+    content: '/\f105';
+    color: $red-color;
+    margin-left: 1rem;
+}
+
+hr {
+    margin: 4rem 0;
+    opacity: 0.4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white-color;
+
+    &:hover {
+        color: $white-color;
+    }
+    &:active {
+        color: $white-color;
+    }
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.8;
+    color: #111;
+}

@@ -1,0 +1,42 @@
+/*  ===============
+    NAVIGATION BURGER 
+    ===============  */
+
+// Burger Icon
+header .burger { 
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+
+    div {
+        width: 3.5rem;
+        height: 0.5rem;
+        background-color: $red-color;
+        margin: 0.5rem 2rem 0.5rem 0.5rem;
+        border-radius: 0.3rem;
+        transition: all 0.25s ease;
+
+    }
+
+}
+
+// Navigation active ( Quand je clique sur le burger )
+.nav-active {
+    display: block;
+    opacity: 1;
+}
+
+
+// Transformation des lignes du burger en croix "X"
+.toggle-burger .line1 {
+    transform: rotate(-45deg) translate(-0.77rem, 0.6rem);
+}
+.toggle-burger .line2 {
+    opacity: 0;
+}
+.toggle-burger .line3 {
+    transform: rotate(45deg) translate(-0.77rem, -0.6rem);
+}
